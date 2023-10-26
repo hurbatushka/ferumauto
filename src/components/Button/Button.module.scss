@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100;300;400;600;800&family=Lexend:wght@100;300;600;800&display=swap');
+
+.btn {
+  font-family: Lexend Peta;
+  font-weight: 700;
+  min-width: 230px;
+  min-height: 40px;
+  border-radius: 12px;
+  border: 2px solid #fff;
+  border-color: #fff;
+  background-color: #ff3737;
+  cursor: pointer;
+  color: #fff;
+  font-size: 21px;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.btn:hover {
+  background-color: #ff5555; /* Новый цвет при наведении */
+}
+
+.btn:active {
+  transform: translateY(1px); /* Опускание при нажатии */
+}

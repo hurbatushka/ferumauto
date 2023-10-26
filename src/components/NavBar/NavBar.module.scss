@@ -1,0 +1,45 @@
+/* Импорт шрифта */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100;300;400;600;800&family=Lexend:wght@100;300;600;800&display=swap');
+
+/* Стили для контейнера кнопок */
+.buttonContainer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Стили для обертки кнопки и линии */
+.buttonWrapper {
+  display: inline-block;
+  position: relative;
+  margin: 0 20px;
+}
+
+/* Стили для кнопок */
+.button {
+  font-family: 'Lexend Peta';
+  font-weight: 400;
+  font-size: 28px;
+  color: #111;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+/* Стили для красной линии под активной кнопкой */
+.line {
+  position: absolute;
+  bottom: -4px;
+  width: 60%;
+  height: 1px;
+  background-color: #ff3737;
+  display: block;
+  left: 50%; /* Расположение линии по центру */
+  transform: translateX(-50%); /* Центрирование линии относительно кнопки */
+}
+
+/* Стили для расширения линии при активации кнопки */
+.button.active + .line {
+  margin-left: 20%;
+}
