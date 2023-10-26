@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100;300;400;600;800&family=Lexend:wght@100;300;600;800&display=swap');
+
+.container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  h4 {
+    font-family: Lexend Peta;
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    color: #ff3737;
+  }
+
+  h1 {
+    font-family: Lexend Peta;
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: center;
+    max-width: 550px;
+    letter-spacing: 0;
+  }
+}
+.container::before,
+.container::after {
+  content: ''; /* Добавляем пустое содержимое для псевдоэлементов */
+  position: absolute; /* Устанавливаем позицию абсолютной для псевдоэлементов */
+  width: 15%; /* Занимают всю ширину h1 */
+  height: 2px; /* Толщина линии */
+  background-color: #ff3737; /* Цвет линии (черный в данном случае) */
+}
+
+.container::before {
+  left: 17%;
+}
+.container::after {
+  right: 17%;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+
+  .leftGrid {
+    display: flex;
+    flex-direction: column;
+
+    .map {
+      width: 600px;
+      height: 450px;
+    }
+    p {
+      color: #ff3737;
+      padding-top: 15px;
+      padding-bottom: 20px;
+      font-family: 'Lexend Peta', sans-serif;
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 38px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .rightGrid {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 150px;
+    margin-top: 50px;
+
+    .gridElement {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      align-items: center;
+      grid-gap: 10px;
+
+      .image_right {
+        fill: #ff3737;
+        width: 100%;
+        max-height: 100%;
+      }
+
+      h1 {
+        font-family: 'Lexend Peta', sans-serif;
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 38px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 0;
+      }
+
+      p {
+        font-family: 'Lexend Peta', sans-serif;
+        font-size: 24px;
+        font-weight: 100;
+        line-height: 38px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 0;
+      }
+    }
+  }
+  .rightGrid {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr); /* Создаем 3 вертикальных ряда */
+    grid-template-columns: 1fr; /* Один столбец */
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+    .gridElement {
+      display: grid;
+      grid-template-rows: auto auto; /* Два вертикальных ряда внутри каждого грида */
+      align-items: center;
+      justify-content: center;
+      grid-gap: 0px;
+
+      .image_right {
+        text-align: right;
+        fill: #ff3737;
+        width: 100%;
+        max-height: 100%;
+      }
+
+      h1 {
+        color: #ff3737;
+        font-family: 'Lexend Peta', sans-serif;
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 38px;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+
+      p {
+        color: #ff3737;
+        font-family: 'Lexend Peta', sans-serif;
+        font-size: 24px;
+        font-weight: 100;
+        line-height: 38px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin: 0;
+      }
+    }
+  }
+}

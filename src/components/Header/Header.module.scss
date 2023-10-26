@@ -79,15 +79,17 @@
     font-size: 15px;
     color: #fff;
   }
-
+  .iconadr {
+    margin-right: 15px;
+  }
   .header_adress {
     text-decoration: none;
     a:visited {
       color: #fff;
     }
   }
-
   .header_adress_container {
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
     p {
@@ -102,7 +104,8 @@
       color: #fff;
     }
   }
-  .header_adress_logo {
-    width: 60%;
-  }
+}
+
+.logo_svg {
+  margin-right: 15px;
 }

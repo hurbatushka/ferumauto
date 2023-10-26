@@ -1,10 +1,20 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  min-height: 78vh;
+}
+.main_found {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+}
+
+.urlnotfound {
+  color: blue;
 }
 
 .description {
@@ -193,11 +203,7 @@
     inset: auto 0 0;
     padding: 2rem;
     height: 200px;
-    background: linear-gradient(
-      to bottom,
-      transparent 0%,
-      rgb(var(--background-end-rgb)) 40%
-    );
+    background: linear-gradient(to bottom, transparent 0%, rgb(var(--background-end-rgb)) 40%);
     z-index: 1;
   }
 }

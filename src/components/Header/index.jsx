@@ -18,16 +18,21 @@ function Header() {
           />
         </Link>
         <div className={styles.adress}>
-          <Link href="https://yandex.by/maps/-/CDQKqA4h" className={styles.header_adress_icon}>
-            <Image
-              className={styles.logo_link}
-              src="/svg/adress.svg"
-              alt="FerumAuto Logo"
-              width={180}
-              height={37}
-              priority
-            />
-          </Link>
+          <div className={styles.iconadr}>
+            <Link
+              href="https://yandex.by/maps/-/CDQKqA4h"
+              target="_blank"
+              className={styles.header_adress_icon}>
+              <Image
+                className={styles.logo_link}
+                src="/svg/adress.svg"
+                alt="FerumAuto Logo"
+                width={180}
+                height={37}
+                priority
+              />
+            </Link>
+          </div>
         </div>
         <Link
           href="https://yandex.by/maps/-/CDQKqA4h"

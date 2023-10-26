@@ -1,0 +1,21 @@
+.footer {
+  margin-top: 20px;
+  font-family: 'Lexend Peta', sans-serif;
+  margin-left: 15%;
+  display: flex;
+  align-items: center;
+  max-width: 70%;
+  background-color: #ff3737;
+  justify-content: center; /* Центрируем содержимое по горизонтали */
+  height: 60px; /* Высота футера, укажите желаемую высоту */
+}
+
+.footer p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff; /* Цвет текста */
+  margin: 0; /* Убираем отступы у абзацев */
+}

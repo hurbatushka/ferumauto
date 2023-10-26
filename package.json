@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@pbe/react-yandex-maps": "^1.2.5",
     "mini-css-extract-plugin": "^2.7.6",
     "next": "13.5.6",
     "react": "^18",

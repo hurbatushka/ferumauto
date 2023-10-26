@@ -3,10 +3,10 @@ import styles from '../page.module.css';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'ФеруммАвто | СТО',
+  title: 'ФеруммАвто | Кузовной ремонт',
   description: 'СТО твоей мечты',
 };
 
 export default function page() {
-  return <main className={styles.main}>Тут будет страница СТО</main>;
+  return <main className={styles.main}>Тут будет страница кузовного ремонта</main>;
 }
