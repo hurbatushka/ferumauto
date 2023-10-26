@@ -8,7 +8,7 @@ import NavBar from '../components/NavBar';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'ФерумАвто',
+  title: 'ФерумАвто | Главная',
   description: 'СТО твоей мечты',
 };
 
