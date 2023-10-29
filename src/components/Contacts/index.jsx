@@ -22,12 +22,12 @@ export default function Contacts() {
             <Map
               className={styles.map}
               defaultState={{
-                center: [52.386932, 31.022555],
+                center: [52.386641, 31.021549],
                 zoom: 17,
                 controls: ['zoomControl'],
               }}>
               <Placemark
-                defaultGeometry={[52.386932, 31.022555]}
+                defaultGeometry={[52.386641, 31.021549]}
                 properties={{
                   balloonContentBody: 'Мы находимся тут:)',
                 }}
