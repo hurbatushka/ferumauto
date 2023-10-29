@@ -49,6 +49,10 @@
   grid-template-columns: repeat(4, 1fr); /* Создает 3 колонки в ряд */
   grid-gap: 20px; /* Опционально, задает промежуток между элементами */
 
+  @media screen and (max-width:960px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .advantage_icon {
     color: #ff3737;
   }
