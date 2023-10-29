@@ -53,3 +53,10 @@
   grid-row-gap: 200px;
 }
 
+@media screen and (max-width:1340px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
