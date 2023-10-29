@@ -4,9 +4,11 @@
 /* Стили для контейнера кнопок */
 .buttonContainer {
   margin-top: 20px;
+  align-items: center;
+  text-align: center;
+
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 /* Стили для обертки кнопки и линии */
@@ -41,4 +43,20 @@
 /* Стили для расширения линии при активации кнопки */
 .button.active + .line {
   margin-left: 20%;
+}
+
+@media (hover:hover) {
+  .buttonWrapper {
+    a:hover {
+      span {
+        color: #ff3737;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:860px) {
+  .buttonContainer {
+    flex-direction: column;
+  }
 }
