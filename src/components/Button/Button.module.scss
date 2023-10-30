@@ -13,6 +13,12 @@
   color: #fff;
   font-size: 20px;
   transition: background-color 0.3s, transform 0.1s;
+
+  @media screen and (max-width:560px) {
+    min-width: 240px;
+    min-height: 32px;
+    font-size: 12px;
+  }
 }
 
 .btn:hover {
