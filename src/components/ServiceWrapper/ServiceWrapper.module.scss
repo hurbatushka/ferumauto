@@ -29,6 +29,11 @@
     text-align: center;
     max-width: 550px;
     letter-spacing: 0;
+
+    @media screen and (max-width:560px) {
+      font-size: 25px;
+      line-height: 25px;
+    }
   }
 }
 .container::before,

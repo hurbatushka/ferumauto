@@ -27,7 +27,19 @@
     text-align: center;
     max-width: 550px;
     letter-spacing: 0;
+
+    @media screen and (max-width:580px) {
+      background: #FFFFFF;
+      z-index: 1;
+    }
+
+    @media screen and (max-width:560px) {
+      font-size: 25px;
+      line-height: 25px;
+    }
   }
+
+
 }
 .container::before,
 .container::after {
@@ -36,6 +48,10 @@
   width: 15%; /* Занимают всю ширину h1 */
   height: 2px; /* Толщина линии */
   background-color: #ff3737; /* Цвет линии (черный в данном случае) */
+
+  @media screen and (max-width:560px) {
+    display: none;
+  }
 }
 
 .container::before {
@@ -51,16 +67,41 @@
 
   @media screen and (max-width:1120px) {
     grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+  }
+
+  @media screen and (max-width:460px) {
+    grid-gap: 0px;
   }
 
   .leftGrid {
     display: flex;
     flex-direction: column;
 
+    @media screen and (max-width:1120px) {
+      align-items: center;
+    }
+
     .map {
       width: 600px;
       height: 450px;
+
+      @media screen and (max-width:660px) {
+        width: 500px;
+        height: 400px;
+      }
+
+      @media screen and (max-width:560px) {
+        width: 400px;
+        height: 300px
+      }
+
+      @media screen and (max-width:460px) {
+        width: 300px;
+        height: 150px
+      }
     }
+
     p {
       color: #ff3737;
       padding-top: 15px;
@@ -76,6 +117,12 @@
     img {
       max-width: 100%;
       height: auto;
+    }
+
+    @media screen and (max-width:1120px) {
+      p {
+        text-align: center;
+      }
     }
   }
   .rightGrid {
@@ -100,6 +147,11 @@
       grid-template-columns: 100px 1fr;
       align-items: center;
       grid-gap: 10px;
+
+      @media screen and (max-width:460px) {
+        grid-template-columns: 15% 1fr;
+        justify-items: end;
+      }
 
       .image_right {
         fill: #ff3737;
@@ -136,6 +188,10 @@
     align-items: center;
     justify-content: center;
 
+    @media screen and (max-width:460px) {
+      justify-items: start;
+    }
+
     .gridElement {
       display: grid;
       grid-template-rows: auto auto; /* Два вертикальных ряда внутри каждого грида */
@@ -158,6 +214,11 @@
         line-height: 38px;
         letter-spacing: 0em;
         text-align: center;
+
+        @media screen and (max-width:460px) {
+          font-size: 14px;
+          line-height: 14px;
+        }
       }
 
       p {
@@ -169,13 +230,12 @@
         letter-spacing: 0em;
         text-align: center;
         margin: 0;
+
+        @media screen and (max-width:460px) {
+          font-size: 14px;
+          line-height: 14px;
+        }
       }
     }
-  }
-}
-
-@media screen and (max-width:13) {
-  .rightGrid {
-    margin-left: 140px;
   }
 }
