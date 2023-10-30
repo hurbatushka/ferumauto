@@ -1,76 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100;300;400;600;800&family=Lexend:wght@100;300;600;800&display=swap');
 
-.container {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-bottom: 20px;
-
-  h4 {
-    font-family: Lexend Peta;
-    font-size: 24px;
-    font-weight: 100;
-    line-height: 38px;
-    letter-spacing: 0em;
-    text-align: center;
-
-    color: #ff3737;
-  }
-
-  h1 {
-    font-family: Lexend Peta;
-    font-size: 34px;
-    font-weight: 800;
-    line-height: 45px;
-    letter-spacing: 0em;
-    text-align: center;
-    max-width: 550px;
-    letter-spacing: 0;
-
-    @media screen and (max-width:580px) {
-      background: #FFFFFF;
-      z-index: 1;
-    }
-
-    @media screen and (max-width:560px) {
-      font-size: 25px;
-      line-height: 25px;
-    }
-  }
-
-
-}
-.container::before,
-.container::after {
-  content: ''; /* Добавляем пустое содержимое для псевдоэлементов */
-  position: absolute; /* Устанавливаем позицию абсолютной для псевдоэлементов */
-  width: 15%; /* Занимают всю ширину h1 */
-  height: 2px; /* Толщина линии */
-  background-color: #ff3737; /* Цвет линии (черный в данном случае) */
-
-  @media screen and (max-width:560px) {
-    display: none;
-  }
-}
-
-.container::before {
-  left: 17%;
-}
-.container::after {
-  right: 17%;
-}
 .wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
 
-  @media screen and (max-width:1120px) {
+  @media (max-width: 1120px) {
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
   }
 
-  @media screen and (max-width:460px) {
+  @media (max-width: 460px) {
     grid-gap: 0px;
   }
 
@@ -78,7 +18,7 @@
     display: flex;
     flex-direction: column;
 
-    @media screen and (max-width:1120px) {
+    @media (max-width: 1120px) {
       align-items: center;
     }
 
@@ -86,19 +26,19 @@
       width: 600px;
       height: 450px;
 
-      @media screen and (max-width:660px) {
+      @media (max-width: 660px) {
         width: 500px;
         height: 400px;
       }
 
-      @media screen and (max-width:560px) {
+      @media (max-width: 560px) {
         width: 400px;
-        height: 300px
+        height: 300px;
       }
 
-      @media screen and (max-width:460px) {
+      @media (max-width: 460px) {
         width: 300px;
-        height: 150px
+        height: 150px;
       }
     }
 
@@ -119,7 +59,7 @@
       height: auto;
     }
 
-    @media screen and (max-width:1120px) {
+    @media (max-width: 1120px) {
       p {
         text-align: center;
       }
@@ -134,11 +74,11 @@
     margin-left: 150px;
     margin-top: 50px;
 
-    @media screen and (max-width:1320px) {
+    @media (max-width: 1320px) {
       margin-left: 10%;
     }
 
-    @media screen and (max-width:1190px) {
+    @media (max-width: 1190px) {
       margin-left: 0;
     }
 
@@ -148,7 +88,7 @@
       align-items: center;
       grid-gap: 10px;
 
-      @media screen and (max-width:460px) {
+      @media (max-width: 460px) {
         grid-template-columns: 15% 1fr;
         justify-items: end;
       }
@@ -188,7 +128,7 @@
     align-items: center;
     justify-content: center;
 
-    @media screen and (max-width:460px) {
+    @media (max-width: 460px) {
       justify-items: start;
     }
 
@@ -215,7 +155,7 @@
         letter-spacing: 0em;
         text-align: center;
 
-        @media screen and (max-width:460px) {
+        @media (max-width: 460px) {
           font-size: 14px;
           line-height: 14px;
         }
@@ -231,7 +171,7 @@
         text-align: center;
         margin: 0;
 
-        @media screen and (max-width:460px) {
+        @media (max-width: 460px) {
           font-size: 14px;
           line-height: 14px;
         }

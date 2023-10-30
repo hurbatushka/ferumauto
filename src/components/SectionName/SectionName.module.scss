@@ -34,6 +34,9 @@
   width: 15%; /* Занимают всю ширину h1 */
   height: 2px; /* Толщина линии */
   background-color: #ff3737; /* Цвет линии (черный в данном случае) */
+  @media (max-width: 1200px) {
+    display: none;
+  }
 }
 
 .container::before {

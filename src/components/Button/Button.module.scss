@@ -2,7 +2,7 @@
 
 .btn {
   font-family: Lexend Peta;
-  font-weight: 700;
+  font-weight: 400;
   min-width: 330px;
   min-height: 40px;
   border-radius: 12px;
@@ -14,7 +14,7 @@
   font-size: 20px;
   transition: background-color 0.3s, transform 0.1s;
 
-  @media screen and (max-width:560px) {
+  @media (max-width: 560px) {
     min-width: 240px;
     min-height: 32px;
     font-size: 12px;
