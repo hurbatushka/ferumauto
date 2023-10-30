@@ -3,13 +3,12 @@
 
 /* Стили для контейнера кнопок */
 .buttonContainer {
-  margin-top: 20px;
   align-items: center;
   text-align: center;
   max-width: 1330px;
   width: 100%;
   margin: 0 auto;
-
+  margin-top: 20px;
   display: flex;
   justify-content: center;
 }
@@ -48,7 +47,7 @@
   margin-left: 20%;
 }
 
-@media (hover:hover) {
+@media (hover: hover) {
   .buttonWrapper {
     a:hover {
       span {
@@ -58,7 +57,7 @@
   }
 }
 
-@media screen and (max-width:860px) {
+@media screen and (max-width: 860px) {
   .buttonContainer {
     flex-direction: column;
   }

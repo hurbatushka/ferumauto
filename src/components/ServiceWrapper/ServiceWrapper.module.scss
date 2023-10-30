@@ -1,59 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100;300;400;600;800&family=Lexend:wght@100;300;600;800&display=swap');
 
-.container {
-  margin-top: 15px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-bottom: 20px;
-
-  h4 {
-    font-family: Lexend Peta;
-    font-size: 24px;
-    font-weight: 100;
-    line-height: 38px;
-    letter-spacing: 0em;
-    text-align: center;
-
-    color: #ff3737;
-  }
-
-  h1 {
-    background: #FFFFFF;
-    z-index: 1;
-    font-family: Lexend Peta;
-    font-size: 34px;
-    font-weight: 800;
-    line-height: 45px;
-    letter-spacing: 0em;
-    text-align: center;
-    max-width: 550px;
-    letter-spacing: 0;
-
-    @media screen and (max-width:560px) {
-      font-size: 25px;
-      line-height: 25px;
-    }
-  }
-}
-.container::before,
-.container::after {
-  content: ''; /* Добавляем пустое содержимое для псевдоэлементов */
-  position: absolute; /* Устанавливаем позицию абсолютной для псевдоэлементов */
-  width: 15%; /* Занимают всю ширину h1 */
-  height: 2px; /* Толщина линии */
-  background-color: #ff3737; /* Цвет линии (черный в данном случае) */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Создает 3 колонки в ряд */
+  grid-gap: 20px; /* Опционально, задает промежуток между элементами */
+  grid-row-gap: 200px;
 }
 
-.container::before {
-  left: 17%;
-}
-.container::after {
-  right: 17%;
-}
-
-
-@media screen and (max-width:1340px) {
+@media screen and (max-width: 1340px) {
   .grid {
     display: flex;
     flex-wrap: wrap;
