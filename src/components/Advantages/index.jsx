@@ -1,9 +1,8 @@
 import React from 'react';
 import styles from './Advantages.module.scss';
 import Image from 'next/image';
-import Link from 'next/link';
 
-import Card from '../Card';
+import SectionName from '../SectionName';
 
 const data = [
   {

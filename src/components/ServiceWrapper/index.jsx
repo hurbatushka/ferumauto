@@ -1,9 +1,8 @@
 import React from 'react';
 import styles from './ServiceWrapper.module.scss';
-import Image from 'next/image';
-import Link from 'next/link';
 
 import Card from '../Card';
+import SectionName from '../SectionName';
 
 const data = [
   {
@@ -83,10 +82,7 @@ const data = [
 export default function () {
   return (
     <>
-      <div className={styles.container}>
-        <h4>УСЛУГИ</h4>
-        <h1>КАЧЕСТВЕННЫЕ УСЛУГИ ПО РЕМОНТУ АВТОМОБИЛЕЙ</h1>
-      </div>
+      <SectionName name="УСЛУГИ" description="КАЧЕСТВЕННЫЕ УСЛУГИ ПО РЕМОНТУ АВТОМОБИЛЕЙ" />
       <div className={styles.grid}>
         {data.map((item, index) => (
           <Card key={index} item={item} />
