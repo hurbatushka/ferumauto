@@ -1,33 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100;300;400;600;800&family=Lexend:wght@100;300;600;800&display=swap');
 
 .header {
+  font-family: Lexend Peta;
   top: 0px;
   max-height: 10%;
+
   display: flex;
   justify-content: center;
-  font-family: Lexend Peta;
 }
 
 .wrapper {
-  font-family: Lexend Peta;
-  display: flex;
-  align-items: center;
-  min-width: 60%;
   background-color: #ff3737;
-  @media (max-width: 955px) {
+  font-family: Lexend Peta;
+
+  margin: 0 auto;
+  max-width: 1330px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (max-width:1220px) {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    .adress .header_adress {
-      white-space: nowrap;
-    }
-    .logo_link {
-      margin-right: 15px;
-    }
+    width: 100%;
+    padding-bottom: 15px;
   }
-  @media (max-width: 1199px) {
-    text-align: center;
+
+  @media (max-width: 1220px) {
     min-width: 100%;
+
     .logo_link {
       min-width: 170px;
     }
@@ -36,13 +40,16 @@
   .buttonit {
     margin-right: 15px;
     margin-left: 25px;
-    @media (max-width: 955px) {
+
+    @media screen and (max-width:1220px) {
       margin: 15px;
     }
   }
+
   .headermailtext {
     margin-bottom: 1%;
   }
+
   .headermailtextcolor {
     font-size: 13px;
     text-decoration: none;
@@ -50,54 +57,71 @@
     margin: 1%;
     margin-right: 0px;
   }
+
   .hmail {
     height: 25px;
     margin-left: 35px;
     margin-right: 5px;
-    @media (max-width: 955px) {
+
+    @media screen and (max-width:1220px) {
       margin: 0px;
     }
   }
+
   .hworkertime {
     text-align: center;
     word-wrap: normal;
     max-width: 130px;
     margin-left: 15px;
     color: #fff;
+
     p {
       padding: 0;
       margin: 0;
       font-size: 12px;
     }
   }
+
   .logo_link {
     margin-left: 15px;
     width: 65%;
   }
+
+  .header__logo_link {
+    margin-left: 15px;
+    width: 180px;
+  }
+
   .adress {
     text-decoration: none;
     font-size: 15px;
     color: #fff;
   }
+
   .iconadr {
     margin-right: 15px;
   }
+
   .header_adress {
     text-decoration: none;
+
     a:visited {
       color: #fff;
     }
   }
+
   .header_adress_container {
     margin-top: 15px;
     display: flex;
     flex-direction: column;
+
     p {
       margin-bottom: 2px;
       width: 100%;
       color: white;
       font-size: 14px;
     }
+
     span {
       margin-bottom: 15px;
       font-size: 12px;

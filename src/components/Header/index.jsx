@@ -9,7 +9,7 @@ function Header() {
       <div className={styles.wrapper}>
         <Link href="/">
           <Image
-            className={styles.logo_link}
+            className={styles.header__logo_link}
             src="/svg/logo.svg"
             alt="FerumAuto Logo"
             width={280}
