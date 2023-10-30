@@ -19,7 +19,7 @@ function Header() {
         </Link>
         <div className={styles.adress}>
           <div className={styles.iconadr}>
-            <Link
+            <a
               href="https://yandex.by/maps/-/CDQKqA4h"
               target="_blank"
               className={styles.header_adress_icon}>
@@ -31,10 +31,10 @@ function Header() {
                 height={37}
                 priority
               />
-            </Link>
+            </a>
           </div>
         </div>
-        <Link
+        <a
           href="https://yandex.by/maps/-/CDQKqA4h"
           className={styles.header_adress}
           target="_blank">
@@ -42,7 +42,7 @@ function Header() {
             <p>ГДЕ МЫ НАХОДИМСЯ ?</p>
             <span>Гомель Достоевского 1B</span>
           </div>
-        </Link>
+        </a>
         <div>
           <Image
             className={styles.logo_link}
@@ -54,18 +54,18 @@ function Header() {
           />
         </div>
         <div className={styles.headermailtext}>
-          <Link href="mailto:ferummavto@mail.ru" className={styles.headermailtextcolor}>
+          <a href="mailto:ferummavto@mail.ru" className={styles.headermailtextcolor}>
             ferummavto@mail.ru
-          </Link>
+          </a>
         </div>
         <div className={styles.hworkertime}>
           График работы 09:00-18:00 <p>Без выходных</p>
         </div>
 
         <div className={styles.buttonit}>
-          <Link href="tel:375293636020" className={styles.headermailtextcolor}>
+          <a href="tel:375293636020" className={styles.headermailtextcolor}>
             <Button value="+375293636020" />
-          </Link>
+          </a>
         </div>
       </div>
     </header>

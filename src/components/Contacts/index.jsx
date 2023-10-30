@@ -4,30 +4,24 @@ import styles from './Contacts.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
 import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
+import SectionName from '../SectionName';
 
 export default function Contacts() {
   return (
     <>
-      <div className={styles.container}>
-        <h1>КОНТАКТЫ</h1>
-      </div>
+      <SectionName description="КОНТАКТЫ" />
       <div className={styles.wrapper}>
         <div className={styles.leftGrid}>
           <p>КАРТА</p>
-          <YMaps
-            query={{
-              ns: 'use-load-option',
-              load: 'Map,Placemark,control.ZoomControl,control.FullscreenControl,geoObject.addon.balloon',
-            }}>
+          <YMaps>
             <Map
               className={styles.map}
               defaultState={{
-                center: [52.386932, 31.022555],
+                center: [52.386641, 31.021549],
                 zoom: 17,
-                controls: ['zoomControl'],
               }}>
               <Placemark
-                defaultGeometry={[52.386932, 31.022555]}
+                defaultGeometry={[52.386641, 31.021549]}
                 properties={{
                   balloonContentBody: 'Мы находимся тут:)',
                 }}
