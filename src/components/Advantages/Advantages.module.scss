@@ -27,6 +27,16 @@
     text-align: center;
     max-width: 550px;
     letter-spacing: 0;
+
+    @media screen and (max-width:580px) {
+      background: #FFFFFF;
+      z-index: 1;
+    }
+
+    @media screen and (max-width:560px) {
+      font-size: 25px;
+      line-height: 25px;
+    }
   }
 }
 .container::before,
@@ -36,6 +46,10 @@
   width: 15%; /* Занимают всю ширину h1 */
   height: 2px; /* Толщина линии */
   background-color: #ff3737; /* Цвет линии (черный в данном случае) */
+
+  @media screen and (max-width:560px) {
+    display: none;
+  }
 }
 
 .container::before {
@@ -53,6 +67,10 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  @media screen and (max-width:460px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .advantage_icon {
     color: #ff3737;
   }
@@ -66,8 +84,17 @@
     padding: 25px;
     text-align: center;
     font-size: 17px;
+
+    @media screen and (max-width:460px) {
+      font-size: 15px;
+    }
+
     p {
       margin-top: 15px;
+
+      @media screen and (max-width:460px) {
+        text-align: justify;
+      }
     }
   }
 }
