@@ -1,13 +1,15 @@
 .footer {
+  margin: 0 auto;
+  max-width: 1330px;
+
+  background-color: #ff3737;
   margin-top: 20px;
+  height: 60px; /* Высота футера, укажите желаемую высоту */
   font-family: 'Lexend Peta', sans-serif;
-  margin-left: 15%;
+
   display: flex;
   align-items: center;
-  max-width: 70%;
-  background-color: #ff3737;
   justify-content: center; /* Центрируем содержимое по горизонтали */
-  height: 60px; /* Высота футера, укажите желаемую высоту */
 }
 
 .footer p {

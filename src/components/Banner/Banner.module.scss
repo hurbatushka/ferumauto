@@ -13,6 +13,14 @@
   min-width: 70%;
   min-height: 30rem;
 
+  @media screen and (max-width:560px) {
+    min-height: 24rem;
+  }
+
+  @media screen and (max-width:460px) {
+    min-height: 20rem;
+  }
+
   h1 {
     font-family: Lexend Peta;
     font-size: 46px;
@@ -21,5 +29,15 @@
     max-width: 529px;
     text-align: center;
     margin-bottom: 50px;
+
+    @media screen and (max-width:560px) {
+      font-size: 30px;
+      line-height: 40px;
+    }
+
+    @media screen and (max-width:385px) {
+      font-size: 27px;
+      line-height: 35px;
+    }
   }
 }
