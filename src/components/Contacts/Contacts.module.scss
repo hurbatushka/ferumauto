@@ -88,11 +88,6 @@
       align-items: center;
       grid-gap: 10px;
 
-      @media (max-width: 460px) {
-        grid-template-columns: 15% 1fr;
-        justify-items: end;
-      }
-
       .image_right {
         fill: #ff3737;
         width: 100%;

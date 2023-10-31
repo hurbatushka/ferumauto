@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from '../page.module.css';
+import styles from '@/app/page.module.css';
 import { Metadata } from 'next';
-import Contacts from '../../components/Contacts';
+import Contacts from '@/components/Contacts';
 
 export const metadata: Metadata = {
   title: 'ФеруммАвто | Контакты',
