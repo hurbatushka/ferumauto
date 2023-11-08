@@ -1,5 +1,11 @@
+import { Metadata } from 'next';
 import styles from './page.module.css';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'Страница не найдена :С',
+  description: 'СТО твоей мечты',
+};
 
 export default function Custom404() {
   return (
