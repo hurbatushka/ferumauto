@@ -6,6 +6,7 @@ import Contacts from '@/components/Contacts';
 export const metadata: Metadata = {
   title: 'ФеруммАвто | Контакты',
   description: 'СТО твоей мечты',
+  icons: '/svg/logo_ferrumauto.svg',
 };
 
 export default function page() {

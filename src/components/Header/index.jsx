@@ -10,7 +10,7 @@ function Header() {
         <Link href="/">
           <Image
             className={styles.header__logo_link}
-            src="/svg/logo.svg"
+            src="/svg/logo_ferrumauto.svg"
             alt="FerumAuto Logo"
             width={280}
             height={67}

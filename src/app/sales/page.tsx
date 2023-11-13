@@ -5,6 +5,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'ФеруммАвто | Запчасти',
   description: 'СТО твоей мечты',
+  icons: '/svg/logo_ferrumauto.svg',
 };
 
 export default function page() {

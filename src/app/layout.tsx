@@ -11,6 +11,7 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'ФеруммАвто | Главная',
   description: 'СТО твоей мечты',
+  icons: '/svg/logo_ferrumauto.svg',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
