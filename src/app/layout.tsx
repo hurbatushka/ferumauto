@@ -9,7 +9,7 @@ import Footer from '../components/Footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'ФеруммАвто | Главная',
+  title: 'ФеррумАвто | Главная',
   description: 'СТО твоей мечты',
   icons: '/svg/logo_ferrumauto.svg',
 };
