@@ -10,9 +10,9 @@ export default function NavBar() {
 
   const menuItems = [
     { text: 'Главная', link: '/' },
-    { text: 'СТО', link: '/sto' },
-    { text: 'Кузовной ремонт', link: '/repair' },
-    { text: 'Запчасти', link: '/sales' },
+    // { text: 'СТО', link: '/sto' },
+    // { text: 'Кузовной ремонт', link: '/repair' },
+    // { text: 'Запчасти', link: '/sales' },
     { text: 'Контакты', link: '/contacts' },
   ];
 

@@ -10,7 +10,7 @@ export default function Card({ item }) {
         <div className={styles.overlay}>
           <h2>{item.label}</h2>
           <p>{item.description}</p>
-          <Link className={styles.link} href={item.urlAbout}>
+          <Link className={styles.link} href={'/service-about/' + item.id}>
             Подробнее
           </Link>
         </div>

@@ -1,0 +1,94 @@
+.modal {
+  margin: 5px;
+  padding: 5px;
+  &-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+
+  &-container {
+    background-color: #fff;
+    max-width: 640px;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: auto; /* Добавим возможность прокрутки, если содержимое слишком велико */
+  }
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    button {
+      font-size: 1.25rem;
+      cursor: pointer;
+      background: none;
+      border: none;
+      color: #666;
+    }
+  }
+
+  &-body {
+    margin-bottom: 1rem;
+
+    label {
+      display: block;
+      font-size: 0.875rem;
+      margin-bottom: 0.25rem;
+    }
+
+    input {
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 0.25rem;
+    }
+  }
+
+  &-footer {
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+      font-family: Lexend Peta;
+      font-weight: 400;
+      min-width: 330px;
+      min-height: 40px;
+      border-radius: 12px;
+      border: 2px solid #fff;
+      border-color: #fff;
+      background-color: #ff3737;
+      cursor: pointer;
+      color: #fff;
+      font-size: 20px;
+      transition: background-color 0.3s, transform 0.1s;
+
+      @media (max-width: 560px) {
+        min-width: 240px;
+        min-height: 32px;
+        font-size: 18px;
+      }
+
+      button:hover {
+        background-color: #ff5555; /* Новый цвет при наведении */
+      }
+    }
+  }
+}

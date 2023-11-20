@@ -1,0 +1,76 @@
+.main_found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  min-height: 76vh;
+  margin-top: 15px;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 15%;
+  max-width: 75%;
+
+  @media screen and (max-width: 768px) {
+    margin-left: 0;
+    max-width: 100%;
+    flex-direction: column;
+
+    .imageContainer {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+
+    .contentContainer {
+      max-width: 100%;
+    }
+  }
+
+  .imageContainer {
+    max-width: 40%;
+    margin-right: 2rem;
+
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+      margin-right: 0;
+    }
+  }
+
+  .contentContainer {
+    text-align: left;
+    max-width: 60%;
+    padding: 15px;
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+
+  .headermailtextcolor {
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+    margin: 1%;
+    margin-left: 35px;
+    @media screen and (max-width: 768px) {
+      margin-left: 0;
+    }
+  }
+}
