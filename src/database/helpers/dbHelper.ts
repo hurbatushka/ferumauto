@@ -7,14 +7,6 @@ const client = new MongoClient(process.env.DB_CONN_STRING as string, {
     deprecationErrors: true,
   },
 });
-async function useDB(client: MongoClient): Promise<T> {
-  await client.connect();
-  return {
-    async [Symbol.dispose]() {
-      await client.close();
-    },
-  };
-}
 class DatabaseHelper {
   async getAllServices() {
     try {
