@@ -1,8 +1,7 @@
 'use client';
 import React, { useState } from 'react';
-import Modal from '@/components/Modal'; // Подставьте правильный путь к вашему компоненту Modal
+import Modal from '@/components/Modal';
 import styles from './Button.module.scss';
-import { Phone } from 'lucide-react';
 
 export default function Button({ value, modal, phone }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -18,8 +17,7 @@ export default function Button({ value, modal, phone }) {
   return (
     <>
       <button className={styles.btn} onClick={openModal}>
-        {phone && <Phone style={{ width: '50px', paddingTop: '5px', paddingRight: '15px' }} />}
-        <span>{value}</span>
+       {value}
       </button>
       {modal && isModalOpen && <Modal iscloseModal={closeModal} setIsModalOpen={setIsModalOpen} />}
     </>
