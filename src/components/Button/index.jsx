@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Modal from '@/components/Modal';
 import styles from './Button.module.scss';
 
-export default function Button({ value, modal, phone }) {
+export default function Button({ value, modal }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => {

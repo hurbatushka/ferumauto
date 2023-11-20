@@ -51,7 +51,7 @@ export default function AboutService({ params }: IAboutParams) {
         <p>{fulldescription}</p>
       </div>
       <a href="tel:375293636020" className={styles.headermailtextcolor}>
-        <Button value="+375293636020" />
+        <Button value="+375293636020" modal={false} />
       </a>
     </main>
   );
