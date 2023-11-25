@@ -13,12 +13,13 @@ export default function Contacts() {
       <div className={styles.wrapper}>
         <div className={styles.leftGrid}>
           <p>КАРТА</p>
-          <YMaps>
+          {/* <YMaps>
             <Map
               className={styles.map}
               defaultState={{
                 center: [52.386641, 31.021549],
                 zoom: 17,
+                oid: 96692530067,
               }}>
               <Placemark
                 defaultGeometry={[52.386641, 31.021549]}
@@ -27,7 +28,8 @@ export default function Contacts() {
                 }}
               />
             </Map>
-          </YMaps>
+          </YMaps> */}
+          <iframe className={styles.map} src="https://yandex.ru/map-widget/v1/?z=17&ol=biz&oid=96692530067" frameborder="0"></iframe>
         </div>
         <div className={styles.rightGrid}>
           <div className={styles.gridElement}>
