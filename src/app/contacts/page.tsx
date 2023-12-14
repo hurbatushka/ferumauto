@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 import Contacts from '@/components/Contacts';
 
 export const metadata: Metadata = {
-  title: 'ФеррумАвто | Контакты',
+  title: 'АвтоФеррум | Контакты',
   description: 'СТО твоей мечты',
   icons: '/svg/logo_ferrumauto.svg',
 };
