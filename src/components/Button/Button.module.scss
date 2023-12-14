@@ -8,9 +8,9 @@
   border-radius: 12px;
   border: 2px solid #fff;
   border-color: #fff;
-  background-color: #ff3737;
+  background-color: #fbdb0b;
   cursor: pointer;
-  color: #fff;
+  color: #000000;
   font-size: 20px;
   transition: background-color 0.3s, transform 0.1s;
 
@@ -22,7 +22,7 @@
 }
 
 .btn:hover {
-  background-color: #ff5555; /* Новый цвет при наведении */
+  background-color: #a79207; /* Новый цвет при наведении */
 }
 
 .btn:active {

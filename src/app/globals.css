@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100;300;400;600;800&family=Lexend:wght@100;300;600;800&display=swap');
+@font-face {
+  font-family: 'Wafle';
+  src: url('/fonts/wafle.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Lexend Peta, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+  --font-mono: Wafle, ui-monospace, Lexend Peta, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono',
     'Droid Sans Mono', 'Courier New', monospace;
 

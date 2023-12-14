@@ -29,7 +29,10 @@ export default function Contacts() {
               />
             </Map>
           </YMaps> */}
-          <iframe className={styles.map} src="https://yandex.ru/map-widget/v1/?z=17&ol=biz&oid=96692530067" frameborder="0"></iframe>
+          <iframe
+            className={styles.map}
+            src="https://yandex.ru/map-widget/v1/?z=17&ol=biz&oid=96692530067"
+            frameborder="0"></iframe>
         </div>
         <div className={styles.rightGrid}>
           <div className={styles.gridElement}>
@@ -49,7 +52,7 @@ export default function Contacts() {
             </Link>
           </div>
           <div className={styles.gridElement}>
-            <Link href="mailto:ferummavto@mail.ru">
+            <Link href="mailto:auto.ferrum@mail.ru">
               <Image
                 className={styles.image_right}
                 src="/svg_red/mail.svg"
@@ -58,8 +61,8 @@ export default function Contacts() {
                 height={50}
               />
             </Link>
-            <Link href="mailto:ferummavto@mail.ru">
-              <h1>FERUMMAVTO@MAIL.RU</h1>
+            <Link href="mailto:auto.ferrum@mail.ru">
+              <h1>AUTO.FERRUM@MAIL.RU</h1>
             </Link>
           </div>
           <div className={styles.gridElement}>
@@ -74,7 +77,16 @@ export default function Contacts() {
               />
             </Link>
             <Link href="tel:375293636020">
-              <h1>+375293636020</h1>
+              <h1>+375 (29) 363-60-20</h1>
+              <Link href="tel:375291805148">
+                <h1>+375 (29) 180-51-48</h1>
+              </Link>
+              <Link href="tel:375257257575">
+                <h1>+375 (25) 725-75-75</h1>
+              </Link>
+              <Link href="tel:375255018398">
+                <h1>+375 (25) 501-83-98</h1>
+              </Link>
             </Link>
           </div>
         </div>

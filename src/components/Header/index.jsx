@@ -12,8 +12,8 @@ function Header() {
             className={styles.header__logo_link}
             src="/svg/logo_ferrumauto.svg"
             alt="FerumAuto Logo"
-            width={280}
-            height={67}
+            width={200}
+            height={100}
             priority
           />
         </Link>
@@ -25,7 +25,7 @@ function Header() {
               className={styles.header_adress_icon}>
               <Image
                 className={styles.logo_link}
-                src="/svg/adress.svg"
+                src="/svg_red/adress.svg"
                 alt="FerumAuto Logo"
                 width={180}
                 height={37}
@@ -46,7 +46,7 @@ function Header() {
         <div>
           <Image
             className={styles.logo_link}
-            src="/svg/mail.svg"
+            src="/svg_red/mail.svg"
             alt="FerumAuto Logo"
             width={180}
             height={37}
@@ -54,8 +54,8 @@ function Header() {
           />
         </div>
         <div className={styles.headermailtext}>
-          <a href="mailto:ferummavto@mail.ru" className={styles.headermailtextcolor}>
-            ferummavto@mail.ru
+          <a href="mailto:auto.ferrum@mail.ru" className={styles.headermailtextcolor}>
+            auto.ferrum@mail.ru
           </a>
         </div>
         <div className={styles.hworkertime}>
@@ -64,7 +64,7 @@ function Header() {
 
         <div className={styles.buttonit}>
           <a href="tel:375293636020" className={styles.headermailtextcolor}>
-            <Button value="+375293636020" />
+            <Button value="+375 (29) 363-60-20" />
           </a>
         </div>
       </div>

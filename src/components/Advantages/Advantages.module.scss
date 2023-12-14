@@ -8,14 +8,14 @@
   margin-bottom: 20px;
 
   h4 {
-    font-family: Lexend Peta;
+    font-family: Wafle;
     font-size: 24px;
     font-weight: 100;
     line-height: 38px;
     letter-spacing: 0em;
     text-align: center;
 
-    color: #ff3737;
+    color: --primary-color;
   }
 
   h1 {
@@ -28,12 +28,12 @@
     max-width: 550px;
     letter-spacing: 0;
 
-    @media screen and (max-width:580px) {
-      background: #FFFFFF;
+    @media screen and (max-width: 580px) {
+      background: #ffffff;
       z-index: 1;
     }
 
-    @media screen and (max-width:560px) {
+    @media screen and (max-width: 560px) {
       font-size: 25px;
       line-height: 25px;
     }
@@ -45,9 +45,9 @@
   position: absolute; /* Устанавливаем позицию абсолютной для псевдоэлементов */
   width: 15%; /* Занимают всю ширину h1 */
   height: 2px; /* Толщина линии */
-  background-color: #ff3737; /* Цвет линии (черный в данном случае) */
+  background-color: --primary-color; /* Цвет линии (черный в данном случае) */
 
-  @media screen and (max-width:560px) {
+  @media screen and (max-width: 560px) {
     display: none;
   }
 }
@@ -63,16 +63,16 @@
   grid-template-columns: repeat(4, 1fr); /* Создает 3 колонки в ряд */
   grid-gap: 20px; /* Опционально, задает промежуток между элементами */
 
-  @media screen and (max-width:960px) {
+  @media screen and (max-width: 960px) {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media screen and (max-width:460px) {
+  @media screen and (max-width: 460px) {
     grid-template-columns: repeat(1, 1fr);
   }
 
   .advantage_icon {
-    color: #ff3737;
+    color: --primary-color;
   }
 
   .container_card {
@@ -85,14 +85,14 @@
     text-align: center;
     font-size: 17px;
 
-    @media screen and (max-width:460px) {
+    @media screen and (max-width: 460px) {
       font-size: 15px;
     }
 
     p {
       margin-top: 15px;
 
-      @media screen and (max-width:460px) {
+      @media screen and (max-width: 460px) {
         text-align: justify;
       }
     }

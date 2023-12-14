@@ -13,7 +13,7 @@
     letter-spacing: 0em;
     text-align: center;
 
-    color: #ff3737;
+    color: #010000;
   }
 
   h1 {
@@ -33,7 +33,7 @@
   position: absolute; /* Устанавливаем позицию абсолютной для псевдоэлементов */
   width: 15%; /* Занимают всю ширину h1 */
   height: 2px; /* Толщина линии */
-  background-color: #ff3737; /* Цвет линии (черный в данном случае) */
+  background-color: #060500; /* Цвет линии (черный в данном случае) */
   @media (max-width: 1200px) {
     display: none;
   }

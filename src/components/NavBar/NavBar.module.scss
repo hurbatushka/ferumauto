@@ -36,7 +36,7 @@
   bottom: -4px;
   width: 60%;
   height: 1px;
-  background-color: #ff3737;
+  background-color: #fbdb0b;
   display: block;
   left: 50%; /* Расположение линии по центру */
   transform: translateX(-50%); /* Центрирование линии относительно кнопки */
@@ -51,7 +51,7 @@
   .buttonWrapper {
     a:hover {
       span {
-        color: #ff3737;
+        color: #fbdb0b;
       }
     }
   }
