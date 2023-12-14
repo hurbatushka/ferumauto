@@ -11,7 +11,7 @@ import { YandexMetricaProvider } from 'next-yandex-metrica';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'ФеррумАвто | Главная',
+  title: 'АвтоФеррум | Главная',
   description: 'СТО твоей мечты',
   icons: '/svg/logo_ferrumauto.svg',
 };
