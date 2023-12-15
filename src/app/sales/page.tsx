@@ -3,7 +3,7 @@ import styles from '../page.module.css';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'ФеррумАвто | Запчасти',
+  title: 'АвтоФеррум | Запчасти',
   description: 'СТО твоей мечты',
   icons: '/svg/logo_ferrumauto.svg',
 };
