@@ -80,15 +80,6 @@ export default function Contacts() {
               <Link href="tel:375293636020">
                 <h1>+375 (29) 363-60-20</h1>
               </Link>
-              <Link href="tel:375291805148">
-                <h1>+375 (29) 180-51-48 (Павел)</h1>
-              </Link>
-              <Link href="tel:375257257575">
-                <h1>+375 (25) 725-75-75 (Константин)</h1>
-              </Link>
-              <Link href="tel:375255018398">
-                <h1>+375 (25) 501-83-98 (Виктор)</h1>
-              </Link>
             </div>
           </div>
         </div>
